@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MY APP</title>
+</head>
+<body>
+  May Node and Express be with you.
+
+  <ul class="citas">
+  <% for(var i=0; i<citas.length; i++) {%>
+    <li class="quote">
+      <span><b>Name: </b><%= citas[i].First_Name %></span>
+      <span><b>Last Name: </b><%= citas[i].Last_Name %></span>
+      <span><b>Phone: </b><%= citas[i].Phone %></span>
+      <span><b>Age: </b><%= citas[i].Age %></span>
+      <span><b>Address:</b> <%= citas[i].Address %></span>
+    </li>
+  <% } %>
+  
+  </ul>
+  <a href="/register">Register</a>
+
+  <a href="/delete">Delete</a>
+</body>
+</html>
